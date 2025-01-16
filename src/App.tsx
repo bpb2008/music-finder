@@ -1,7 +1,8 @@
 import "./App.css";
+import ItunesApp from "./ItunesApp";
 
 function App() {
-  return <></>;
+  return <ItunesApp />;
 }
 
 export default App;
