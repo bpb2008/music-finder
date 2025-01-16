@@ -54,6 +54,7 @@ const MusicApp: React.FC = () => {
 
       const data = await response.json();
       setMusicList(data.tracks.items);
+      console.log(data.tracks.items);
       setError(null);
     } catch (err) {
       setError("An error occurred while searching for music.");
@@ -63,7 +64,6 @@ const MusicApp: React.FC = () => {
   const handleSelectMusic = (music: SpotifyTrack) => {
     setSelectedMusic(music);
   };
-  console.log(musicList);
 
   return (
     <div className="music-app">
